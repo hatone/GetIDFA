@@ -146,6 +146,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Keiichiro Nagashima";
+				TargetAttributes = {
+					58B69ACA173C224C00EE39F5 = {
+						DevelopmentTeam = C45F34GR6J;
+					};
+				};
 			};
 			buildConfigurationList = 58B69AC6173C224C00EE39F5 /* Build configuration list for PBXProject "GetIDFA" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -282,10 +287,13 @@
 		58B69AF2173C224D00EE39F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GetIDFA/GetIDFA-Prefix.pch";
 				INFOPLIST_FILE = "GetIDFA/GetIDFA-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -293,10 +301,13 @@
 		58B69AF3173C224D00EE39F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GetIDFA/GetIDFA-Prefix.pch";
 				INFOPLIST_FILE = "GetIDFA/GetIDFA-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -320,6 +331,7 @@
 				58B69AF3173C224D00EE39F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
